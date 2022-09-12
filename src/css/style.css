@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Ramaraja&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+body {
+  background-color: #000;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+/* 
+.logo {
+  margin-bottom: 24px;
+  max-width: 600px;
+} */
+
+.title-generator {
+  font-family: "Ramaraja", serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
+  transition: 0.3s all ease;
+  text-shadow: #ff0000 -3px 0, #00ffff 3px 0;
+}
+
+.container-input {
+  text-transform: uppercase;
+  max-width: 480px;
+  margin: 14px 0;
+}
+.container-input span {
+  font-size: 1.375rem;
+  color: #fff;
+}
+
+.slider {
+  -webkit-appearance: none;
+  border-radius: 5px;
+  background: #fff;
+  margin-top: 8px;
+  outline: none;
+  height: 18px;
+  width: 100%;
+}
+
+.btn-cta {
+  background-color: #1e1e9f;
+  text-transform: uppercase;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size: 1.125rem;
+  border: 1px solid #ccc;
+  margin-top: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.container-password {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  margin: 14px 0;
+  cursor: pointer;
+  max-width: 480px;
+}
+
+.title {
+  margin-bottom: 8px;
+  text-align: center;
+  margin-top: 24px;
+  font-size: 1.75rem;
+  color: #fff;
+}
+
+.password {
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s;
+  border-radius: 4px;
+  display: flex;
+  border: 1px solid #313131;
+  height: 60px;
+  color: #fff;
+}
+.password:hover {
+  transform: scale(1.05);
+}
+
+.tooltip {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  font-size: 1rem;
+  position: relative;
+  padding: 6px 8px;
+  opacity: 0;
+  color: #fff;
+  top: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.container-password:hover .tooltip {
+  visibility: visible;
+  bottom: 50px;
+  opacity: 1;
+}
+
+@media (max-width: 724px) {
+  body {
+    padding: 20px;
+  }
+  .title-generator {
+    letter-spacing: 2px;
+    line-height: 1;
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .title-generator {
+    letter-spacing: 0px;
+    line-height: 1;
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .title-generator {
+    letter-spacing: 0px;
+    line-height: 0.8;
+    font-size: 4rem;
+  }
+}
